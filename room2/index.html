@@ -8,7 +8,7 @@
 </head>
 <body>
   <main>
-    <h1>Room 1</h1>
+    <h1>Room 2</h1>
     <p>Solve the following to find the room2 number:</p>
     <p>What is 3 + 4?</p>
     <input type="text" id="answer" placeholder="Enter your answer">
@@ -25,7 +25,8 @@
       const result = document.getElementById("result");
       if (answer === "7") {
         result.innerText = "Correct! The second number is 2.";
-        
+        // alert("navigating to room 2")
+        window.location.href = "../room3/index.html";
       } else {
         result.innerText = "Try again!";
       }
