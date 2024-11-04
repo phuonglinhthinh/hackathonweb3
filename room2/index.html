@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Room 1</h1>
+    <p>Solve the following to find the room2 number:</p>
+    <p>What is 3 + 4?</p>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button class="btn">Submit</button>
+    <p id="result"></p>
+  </main>
+  <script>
+    const btn = document.querySelector('.btn')
+    
+
+    const checkAnswer = () => {
+      const answer = document.getElementById("answer").value;
+      console.log(answer)
+      const result = document.getElementById("result");
+      if (answer === "7") {
+        result.innerText = "Correct! The second number is 2.";
+        
+      } else {
+        result.innerText = "Try again!";
+      }
+    }
+
+    btn.addEventListener('click', checkAnswer)
+
+  </script>
+</body>
+</html>
