@@ -9,7 +9,7 @@
 <body>
   <main>
     <h1>Room 1</h1>
-    <p>Solve the following to find the first number:</p>
+    <p>Solve the following to find the room2 number:</p>
     <p>What is 3 + 4?</p>
     <input type="text" id="answer" placeholder="Enter your answer">
     <button class="btn">Submit</button>
@@ -25,6 +25,7 @@
       const result = document.getElementById("result");
       if (answer === "7") {
         result.innerText = "Correct! The second number is 2.";
+        
       } else {
         result.innerText = "Try again!";
       }
