@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-inline-size: 20rem;
+  position: relative;
+}
+
+.cover {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cover:hover {
+  opacity: 0;
+}
+
+img {
+  max-inline-size: 100%;
+}
